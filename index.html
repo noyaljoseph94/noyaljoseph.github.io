@@ -27,9 +27,27 @@
       line-height: 1.6;
     }
 
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
+header {
+header .contact a,
+header .btn {
+  color: #ffd700; /* a golden accent */
+  text-decoration: none;
+}
+
+header .btn {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle transparent button */
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ffd700;
+  transition: background 0.3s, transform 0.3s;
+}
+
+header .btn:hover {
+  background-color: #ffd700;
+  color: #1e3c72;
+  transform: translateY(-2px);
+}
+
     }
 
     h1 {
@@ -140,17 +158,22 @@
 
 <body>
   <header>
+  <div class="header-container">
     <img src="noyal-photo.jpg" alt="Noyal Joseph" class="profile-pic">
-    <h1>Noyal Joseph</h1>
-    <h3>Associate | Data Annotation Specialist & Data Operations Professional</h3>
-    <div class="contact">
-      📧 <a href="mailto:noyaljoseph94@gmail.com">noyaljoseph94@gmail.com</a> |
-      📞 9035804104 |
-      🔗 <a href="https://www.linkedin.com/in/noyaljoseph1994" target="_blank">LinkedIn</a> |
-      💻 <a href="https://github.com/noyaljoseph" target="_blank">GitHub</a>
+    <div class="header-text">
+      <h1>Noyal Joseph</h1>
+      <h3>Associate | Data Annotation Specialist & Data Operations Professional</h3>
+      <div class="contact">
+        📧 <a href="mailto:noyaljoseph94@gmail.com">noyaljoseph94@gmail.com</a> |
+        📞 9035804104 |
+        🔗 <a href="https://www.linkedin.com/in/noyaljoseph1994" target="_blank">LinkedIn</a> |
+        💻 <a href="https://github.com/noyaljoseph94" target="_blank">GitHub</a>
+      </div>
+      <a href="Noyal_Joseph_Data_Annotator.pdf" class="btn" target="_blank">📄 Download Resume</a>
     </div>
-    <a href="Noyal_Joseph_Data_Annotator.pdf" class="btn" target="_blank">📄 Download Resume</a>
-  </header>
+  </div>
+</header>
+
 
   <div class="container">
     <section class="section">
@@ -243,4 +266,5 @@
   </footer>
 </body>
 </html>
+
 
